@@ -1,31 +1,22 @@
-# PixelNaruto
+PixelNaruto
 
-PixelNaruto is a browser pixel arcade game inspired by Pac-Man, with Naruto as the main character.
+PixelNaruto is a browser pixel arcade game inspired by Pac Man, with Naruto as the main character.
 
-## Play Locally
+Play Online
 
-Open `index.html` in a browser, or run a local server:
+Open the game here:
+https://drozdovaekaterina.github.io/PixelNaruto/
 
-```bash
-python3 -m http.server 5173
-```
+Controls
 
-Then open:
+Arrow keys move Naruto.
+Pause button pauses/resumes the game.
 
-```text
-http://localhost:5173/
-```
+Game Rules
 
-## Controls
-
-- Arrow keys: move Naruto
-- Pause button: pause/resume the game
-
-## Game Rules
-
-- Naruto has 3 lives.
-- Each level has 5 scrolls.
-- There are 5 different maze layouts.
-- Akatsuki enemies move through the maze.
-- Touching an Akatsuki removes 1 life and returns Naruto to the level start.
-- After 5 completed levels, the game ends successfully.
+Naruto has 3 lives.
+Each level has 5 scrolls.
+There are 5 different maze layouts.
+Akatsuki enemies move through the maze.
+Touching an Akatsuki removes 1 life and returns Naruto to the level start.
+After 5 completed levels, the game ends successfully.
