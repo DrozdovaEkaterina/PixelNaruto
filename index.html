@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Naruto Pixel Chase</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="shell" aria-label="Naruto Pixel Chase">
+      <section class="game-card">
+        <header class="topbar">
+          <div>
+            <h1>Naruto Pixel Chase</h1>
+            <p>Собери свитки, избегай Акацуки и пройди 5 уровней.</p>
+          </div>
+          <button id="pauseBtn" class="icon-btn" type="button" aria-label="Пауза" title="Пауза" hidden>
+            <span class="pause-icon" aria-hidden="true"></span>
+          </button>
+        </header>
+
+        <div class="hud" aria-live="polite">
+          <span>Уровень <strong id="levelText">1</strong>/5</span>
+          <span>Жизни <strong id="livesText">3</strong></span>
+          <span>Очки <strong id="scoreText">0</strong></span>
+        </div>
+
+        <div class="canvas-wrap">
+          <canvas id="gameCanvas" width="672" height="672" aria-label="Игровое поле"></canvas>
+          <div id="messageLayer" class="message-layer" hidden>
+            <div class="message-panel">
+              <h2 id="messageTitle">Готов?</h2>
+              <p id="messageText">Нажми старт, чтобы начать тренировку.</p>
+              <button id="messageButton" class="primary-btn" type="button">Старт</button>
+            </div>
+          </div>
+        </div>
+
+        <nav class="touch-controls" aria-label="Управление на сенсорном экране">
+          <button class="dir-btn up" type="button" data-dir="up" aria-label="Вверх"></button>
+          <button class="dir-btn left" type="button" data-dir="left" aria-label="Влево"></button>
+          <button class="dir-btn down" type="button" data-dir="down" aria-label="Вниз"></button>
+          <button class="dir-btn right" type="button" data-dir="right" aria-label="Вправо"></button>
+        </nav>
+      </section>
+    </main>
+
+    <script src="game.js?v=multi-level-mazes-1"></script>
+  </body>
+</html>
